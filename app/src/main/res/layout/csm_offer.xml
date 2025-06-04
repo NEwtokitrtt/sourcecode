@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="#5E4B97"
+    app:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:id="@+id/linear136"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_csm_home_btn">
+
+        <ImageView
+            android:id="@+id/imageviw_logo"
+            android:layout_width="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rdo"
+            android:src="@drawable/ic_launcher"
+            android:contentDescription="@string/image_desc"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@id/image"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/main_one"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/main_two"
+                android:text="@string/offer_desc"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_marginEnd="-35dp"
+                android:layout_marginTop="-35dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_width="124dp"
+                android:layout_height="119dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_csm_ovel_14" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentEnd="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/coinbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="-15dp"
+                    android:layout_toEndOf="@+id/img_coin"
+                    android:background="@drawable/bg_csm_game_coinbar">
+
+                    <TextView
+                        android:id="@+id/textview_rs_1"
+                        android:layout_marginTop="-6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginEnd="13dp"
+                        android:fontFamily="@font/main_two"
+                        android:text="50K"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_coin"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/csm_coin"
+                    android:contentDescription="@string/coin_image"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

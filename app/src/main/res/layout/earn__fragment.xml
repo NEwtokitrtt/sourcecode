@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#F5F5F5">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="16dp">
+
+		<!-- Banner -->
+		<ImageView
+			android:id="@+id/bannerImage"
+			android:layout_width="match_parent"
+			android:layout_height="180dp"
+			android:scaleType="centerCrop"
+			android:src="@drawable/img" />
+
+		<!-- Monetization Section -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="16dp"
+			android:orientation="horizontal"
+			android:weightSum="2">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="100dp"
+				android:layout_weight="1"
+				android:background="#FFFFFF"
+				android:elevation="4dp"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:padding="10dp">
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:src="@drawable/home_1" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Play Time"
+					android:textStyle="bold"
+					android:textColor="#000" />
+			</LinearLayout>
+
+			<Space android:layout_width="8dp" android:layout_height="match_parent" />
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="100dp"
+				android:layout_weight="1"
+				android:background="#FFFFFF"
+				android:elevation="4dp"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:padding="10dp">
+
+				<ImageView
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:src="@drawable/play" />
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ads Offer"
+					android:textStyle="bold"
+					android:textColor="#000" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<!-- Offer Wall Section Title -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="Offer Walls"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#333" />
+
+		<!-- Offer Wall Cards Grid -->
+		<GridLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:columnCount="2"
+			android:rowCount="3"
+			android:orientation="horizontal">
+
+			<!-- Example Card (Repeat 6 times with different content) -->
+			<androidx.cardview.widget.CardView
+				android:layout_width="0dp"
+				android:layout_height="150dp"
+				android:layout_margin="8dp"
+				android:layout_columnWeight="1"
+				android:clickable="true"
+				android:foreground="?android:attr/selectableItemBackground"
+				android:background="#FFFFFF"
+				app:cardCornerRadius="12dp"
+				app:cardElevation="4dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:orientation="vertical"
+					android:padding="10dp">
+
+					<ImageView
+						android:layout_width="60dp"
+						android:layout_height="60dp"
+						android:src="@drawable/home_2" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:text="CPA Lead"
+						android:textStyle="bold"
+						android:textColor="#000" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<!-- Repeat above CardView block for Extra, Fiverr, AdGem, etc. -->
+
+		</GridLayout>
+
+	</LinearLayout>
+</ScrollView>

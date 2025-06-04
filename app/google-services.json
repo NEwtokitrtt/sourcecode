@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "571718566664",
+    "firebase_url": "https://cash-looto-8fe1e-default-rtdb.firebaseio.com",
+    "project_id": "cash-looto-8fe1e",
+    "storage_bucket": "cash-looto-8fe1e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571718566664:android:6f798a8ff9c6e4ecb4e2bd",
+        "android_client_info": {
+          "package_name": "com.cashluto.rewad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571718566664-35o1aiftke5art3o5n0juisah89grfnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cashluto.rewad",
+            "certificate_hash": "83ab6c571a6e5b5d9a24941dfc2f92015490b851"
+          }
+        },
+        {
+          "client_id": "571718566664-t9babc17k8qq9fmosdsq85caa43ipl0m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChMx8FB390cEmI6hr31fZzMkw_QCRhvG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571718566664-t9babc17k8qq9fmosdsq85caa43ipl0m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

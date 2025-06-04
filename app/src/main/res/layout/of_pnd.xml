@@ -1,0 +1,91 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear136"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="2dp"
+		android:layout_marginTop="2dp"
+		android:layout_marginRight="2dp"
+		android:layout_marginBottom="4dp"
+		android:padding="8dp"
+		android:background="#FFFFFF"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/textview21"
+			android:focusable="false"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:text="Get ₹"
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#009688" />
+		<ImageView
+			android:id="@+id/imageview_logo"
+			android:focusable="false"
+			android:layout_width="80dp"
+			android:layout_height="60dp"
+			android:src="@drawable/download"
+			android:scaleType="centerInside"
+			android:layout_gravity="center_horizontal|center_vertical" />
+		<ScrollView
+			android:id="@+id/vscroll22"
+			android:layout_width="5dp"
+			android:layout_height="match_parent"
+			android:padding="8dp" />
+		<LinearLayout
+			android:id="@+id/linear151"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear139"
+				android:layout_width="0dp"
+				android:layout_height="0dp"
+				android:layout_marginLeft="20dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal" />
+			<TextView
+				android:id="@+id/textview45"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:background="@android:color/transparent"
+				android:gravity="left|center_vertical"
+				android:text="Mx Player"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#009688"
+				android:layout_gravity="left|center_vertical"
+				android:layout_weight="1" />
+			<LinearLayout
+				android:id="@+id/linear153"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:background="#FF9800"
+				android:gravity="right"
+				android:orientation="vertical"
+				android:layout_gravity="right">
+				<TextView
+					android:id="@+id/textview_rs_1"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:paddingRight="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Pending"
+					android:textSize="20sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="230dp"
+		android:layout_margin="18dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_gravity="center_horizontal|center_vertical">
+		<com.airbnb.lottie.LottieAnimationView
+			android:id="@+id/lottie1"
+			android:layout_width="70dp"
+			android:layout_height="70dp"
+			android:scaleType="fitCenter"
+			android:layout_centerInParent="true"
+			app:lottie_fileName="load.json"
+			app:lottie_loop="true"
+			app:lottie_autoPlay="true" />
+		<TextView
+			android:id="@+id/textview1"
+			android:focusable="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Loading offer..."
+			android:textSize="16sp"
+			android:textStyle="bold"
+			android:textColor="#37474F"
+			android:translationX="-5.0dp"
+			android:layout_gravity="center_horizontal|center_vertical" />
+	</LinearLayout>
+</LinearLayout>

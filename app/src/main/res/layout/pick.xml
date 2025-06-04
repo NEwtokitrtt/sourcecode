@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear141"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_cr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#009688"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageview1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_keyboard_backspace_white"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/textview16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="Offer &amp; Details"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/linear81"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="1dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_cr2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_cr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linear85"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear87"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/linear86"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal|center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageview_appLogo"
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:src="@drawable/style1"
+                                    android:scaleType="centerInside"
+                                    android:layout_gravity="center_horizontal|center_vertical" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear88"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/linear90"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textview_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:padding="8dp"
+                                        android:text="Upload App"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#009688"
+                                        android:translationY="7.0dp" />
+
+                                    <TextView
+                                        android:id="@+id/textview_rewadsAmount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:padding="2dp"
+                                        android:text="Rewards 50₹"
+                                        android:textSize="16sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#FF5722" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear146"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:padding="8dp"
+                                    android:background="#9E9E9E"
+                                    android:orientation="horizontal" />
+
+                                <TextView
+                                    android:id="@+id/textview_apk_info_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:textSize="14sp"
+                                    android:textColor="#009688"
+                                    android:layout_gravity="center_horizontal|center_vertical" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:id="@+id/vscroll3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="5dp"
+                            android:padding="8dp"
+                            android:layout_gravity="center_horizontal|center_vertical" />
+
+                        <LinearLayout
+                            android:id="@+id/linear103"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:padding="8dp"
+                            android:background="#B0BEC5"
+                            android:orientation="horizontal" />
+
+                        <ScrollView
+                            android:id="@+id/vscroll4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:padding="8dp"
+                            android:layout_gravity="center_horizontal|center_vertical" />
+
+                        <LinearLayout
+                            android:id="@+id/linear107"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_horizontal|center_vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview33"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/guu"
+                                android:scaleType="centerCrop" />
+
+                            <LinearLayout
+                                android:id="@+id/linear109"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textview22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Today's Task"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#009688" />
+
+                                <TextView
+                                    android:id="@+id/textview23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tap here to install complete the task :"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#009688" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear108"
+                            android:layout_width="350dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_horizontal|center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linear148"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:padding="8dp"
+                                android:background="#9E9E9E"
+                                android:orientation="horizontal" />
+
+                            <TextView
+                                android:id="@+id/textview21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="Follow Steps to get rewards"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#009688"
+                                android:layout_gravity="center_horizontal|center_vertical" />
+
+                            <LinearLayout
+                                android:id="@+id/linear147"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:padding="8dp"
+                                android:background="#9E9E9E"
+                                android:orientation="horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear99"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center_horizontal|center_vertical">
+
+                            <LinearLayout
+                                android:id="@+id/linear3"
+                                android:layout_width="350dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:orientation="vertical"
+                                android:layout_gravity="center_horizontal|center_vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/linear144"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageview48"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/voucher_2"
+                                        android:scaleType="centerInside"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                                    <TextView
+                                        android:id="@+id/textview_c1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Register"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#009688"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear143"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageview47"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/voucher_2"
+                                        android:scaleType="centerInside"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                                    <TextView
+                                        android:id="@+id/textview_c2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Register"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#BF360C"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear145"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageview49"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/voucher_2"
+                                        android:scaleType="centerInside"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                                    <TextView
+                                        android:id="@+id/textview_c3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Register"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#3E2723"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/linear142"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="1dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:id="@+id/imageview32"
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:layout_marginLeft="15dp"
+                                        android:padding="4dp"
+                                        android:src="@drawable/voucher_2"
+                                        android:scaleType="centerInside"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+
+                                    <TextView
+                                        android:id="@+id/textview_c4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="8dp"
+                                        android:text="Register"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"
+                                        android:textColor="#673AB7"
+                                        android:layout_gravity="center_horizontal|center_vertical" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearcccccccc"
+                                android:layout_width="348dp"
+                                android:layout_height="1dp"
+                                android:padding="8dp"
+                                android:background="#CFD8DC"
+                                android:gravity="left|right"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_horizontal|center_vertical" />
+
+                            <TextView
+                                android:id="@+id/textview_apk_details_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textColor="#009688"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:id="@+id/vscroll14"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:padding="8dp"
+                            android:background="#EEEEEE">
+
+                            <WebView
+                                android:id="@+id/webview1"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_gravity="left" />
+                        </ScrollView>
+
+                        <LinearLayout
+                            android:id="@+id/linear140"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_last"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageview45"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/downloads_whatapp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textview24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="#ECEFF1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Earn rewards after complete "
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#009688" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear112"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|center_vertical">
+
+            <LinearLayout
+                android:id="@+id/linear84"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:background="#009688"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:id="@+id/textview17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Install Now"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:indeterminateTint="@color/white"
+                    style="?android:progressBarStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

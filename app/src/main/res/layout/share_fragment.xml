@@ -1,0 +1,322 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#FFFFFF"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#246447"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:src="@drawable/ic_keyboard_backspace_white"
+					android:scaleType="center" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Invite friends"
+					android:textSize="16sp"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<ImageView
+				android:id="@+id/imageview2"
+				android:layout_width="200dp"
+				android:layout_height="200dp"
+				android:src="@drawable/xfg_2"
+				android:scaleType="fitCenter" />
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:padding="8dp"
+				android:text="Invite friends or family"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#433F3E" />
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:text="share your link &amp;  code, share it's with your friends. if your friends Reagister &amp; Complete Any Offer you will get 70% up to Rewads of Amount 😲 ! Wow"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:textColor="#9E9E9E"
+				android:layout_gravity="center_horizontal|center_vertical" />
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:padding="8dp"
+				android:background="#F5F5F5"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/tx_ref"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="58dp"
+					android:paddingTop="8dp"
+					android:paddingRight="58dp"
+					android:paddingBottom="8dp"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#000000" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="8dp"
+				android:paddingRight="8dp"
+				android:text="Tap to Copy"
+				android:textSize="18sp"
+				android:textColor="#9E9E9E" />
+			<LinearLayout
+				android:id="@+id/linear6"
+				android:layout_width="match_parent"
+				android:layout_height="3dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="8dp"
+				android:gravity="center_horizontal"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear8"
+					android:layout_width="100dp"
+					android:layout_height="1dp"
+					android:padding="8dp"
+					android:background="#9E9E9E"
+					android:orientation="horizontal" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear10"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_marginBottom="6dp"
+				android:padding="8dp"
+				android:orientation="horizontal" />
+			<LinearLayout
+				android:id="@+id/linear22"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#000000"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal"
+				android:layout_gravity="center_horizontal|center_vertical">
+				<TextView
+					android:id="@+id/link"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="https://play.google.com/store/apps/details\?id=com.cashluto.rewad"
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF"
+					android:layout_weight="1" />
+				<ImageView
+					android:id="@+id/imageview8"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:src="@drawable/ic_content_copy_white"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear17"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="20dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:id="@+id/linear18"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_marginLeft="15dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginRight="15dp"
+					android:layout_marginBottom="10dp"
+					android:padding="8dp"
+					android:background="#246447"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:layout_weight="1">
+					<TextView
+						android:id="@+id/textview4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="5dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="Invite Your Friends"
+						android:textSize="20sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear19"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginBottom="10dp"
+					android:padding="8dp"
+					android:background="#246447"
+					android:orientation="vertical">
+					<ImageView
+						android:id="@+id/imageview5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/whatsapgsh"
+						android:scaleType="fitCenter" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear7"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="bottom"
+				android:orientation="horizontal">
+				<LinearLayout
+					android:id="@+id/linear9"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="top"
+					android:orientation="horizontal"
+					android:layout_gravity="top">
+					<LinearLayout
+						android:id="@+id/linear20"
+						android:layout_width="match_parent"
+						android:layout_height="0dp"
+						android:padding="8dp"
+						android:gravity="center_horizontal|center_vertical"
+						android:orientation="horizontal">
+						<LinearLayout
+							android:id="@+id/linear21"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="vertical">
+							<com.airbnb.lottie.LottieAnimationView
+								android:id="@+id/lottie2"
+								android:layout_width="80dp"
+								android:layout_height="80dp"
+								android:padding="8dp"
+								android:scaleType="fitCenter"
+								android:layout_centerInParent="true"
+								app:lottie_fileName="refer-signup.json"
+								app:lottie_loop="true"
+								app:lottie_autoPlay="true" />
+							<TextView
+								android:id="@+id/textview7"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Signup Friend"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<ImageView
+							android:id="@+id/imageview6"
+							android:layout_width="25dp"
+							android:layout_height="25dp"
+							android:src="@drawable/ic_navigate_next_black"
+							android:scaleType="fitCenter" />
+						<LinearLayout
+							android:id="@+id/linear11"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="vertical">
+							<com.airbnb.lottie.LottieAnimationView
+								android:id="@+id/lottie3"
+								android:layout_width="80dp"
+								android:layout_height="80dp"
+								android:padding="8dp"
+								android:scaleType="fitCenter"
+								android:layout_centerInParent="true"
+								app:lottie_fileName="refer-typing.json"
+								app:lottie_loop="true"
+								app:lottie_autoPlay="true" />
+							<TextView
+								android:id="@+id/textview8"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:paddingTop="8dp"
+								android:paddingBottom="8dp"
+								android:text="  Your Friend \nComplete offer"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+						<ImageView
+							android:id="@+id/imageview7"
+							android:layout_width="25dp"
+							android:layout_height="25dp"
+							android:src="@drawable/ic_navigate_next_black"
+							android:scaleType="fitCenter" />
+						<LinearLayout
+							android:id="@+id/linear12"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:gravity="center_horizontal|center_vertical"
+							android:orientation="vertical">
+							<com.airbnb.lottie.LottieAnimationView
+								android:id="@+id/lottie4"
+								android:layout_width="80dp"
+								android:layout_height="80dp"
+								android:padding="8dp"
+								android:scaleType="fitCenter"
+								android:layout_centerInParent="true"
+								app:lottie_fileName="refer-gift.json"
+								app:lottie_loop="true"
+								app:lottie_autoPlay="true" />
+							<TextView
+								android:id="@+id/textview9"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Get Reward"
+								android:textSize="12sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

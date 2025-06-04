@@ -1,0 +1,77 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:padding="4dp"
+		android:background="#FFFFFF"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/upi"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="4dp"
+				android:paddingRight="8dp"
+				android:text="TextView"
+				android:textSize="16sp"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/date"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="4dp"
+				android:text="TextView"
+				android:textSize="14sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/bal"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingTop="4dp"
+				android:paddingRight="8dp"
+				android:text="00"
+				android:textSize="18sp"
+				android:textColor="#000000" />
+			<TextView
+				android:id="@+id/stat"
+				android:focusable="false"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="4dp"
+				android:text="pending"
+				android:textSize="14sp"
+				android:textColor="#000000" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

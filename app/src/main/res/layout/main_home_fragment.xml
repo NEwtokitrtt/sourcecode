@@ -1,0 +1,162 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="5dp"
+				android:orientation="vertical">
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview1"
+					android:layout_width="45dp"
+					android:layout_height="45dp"
+					android:src="@drawable/guu"
+					app:civ_border_width="2dp"
+					app:civ_border_color="#f44336"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:orientation="horizontal"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="3dp"
+					android:text="CASH LOOTO "
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#246447"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:layout_weight="1" />
+				<LinearLayout
+					android:id="@+id/linear6"
+					android:layout_width="57dp"
+					android:layout_height="match_parent"
+					android:padding="2dp"
+					android:background="#246447"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical">
+					<TextView
+						android:id="@+id/textview2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="_  ₹"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear15"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:padding="8dp"
+			android:background="#9E9E9E"
+			android:orientation="horizontal" />
+		<LinearLayout
+			android:id="@+id/linear_sliders"
+			android:layout_width="match_parent"
+			android:layout_height="200dp"
+			android:padding="8dp"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear16"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#000000"
+				android:orientation="horizontal">
+				<androidx.viewpager.widget.ViewPager
+					android:id="@+id/viewpager1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#EEEEEE" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear9"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear11"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginRight="15dp"
+				android:padding="8dp"
+				android:background="#15B8A7"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Offer Wall "
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear12"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginLeft="15dp"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Offer Status "
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#246447" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear10"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+			<LinearLayout
+				android:id="@+id/linear13"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="2dp"
+				android:orientation="vertical" />
+			<LinearLayout
+				android:id="@+id/linear14"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

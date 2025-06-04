@@ -1,0 +1,104 @@
+package com.cashluto.rewads;
+
+import android.Manifest;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
+import android.content.SharedPreferences;
+import android.widget.Toast;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+public class PermissionActivity extends AppCompatActivity {
+
+    private static final int NOTIFICATION_PERMISSION_CODE = 1;
+    private static final String PREFS_NAME = "PermissionPrefs";
+    private static final String PREF_DENY_COUNT = "PermissionDenyCount";
+    private static final String PREF_NAVIGATED_TO_MAIN = "NavigatedToMain";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_permission);
+
+        // Check if already navigated to MainActivity
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        boolean isNavigatedToMain = prefs.getBoolean(PREF_NAVIGATED_TO_MAIN, false);
+
+        if (isNavigatedToMain) {
+            // If already navigated to MainActivity, skip permission request
+            navigateToMainActivity();
+        } else {
+            // Otherwise, request notification permission
+            requestNotificationPermission();
+        }
+    }
+
+    private void requestNotificationPermission() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        int denyCount = prefs.getInt(PREF_DENY_COUNT, 0);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+                    == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted, proceed to MainActivity
+                navigateToMainActivity();
+            } else if (denyCount < 2) {
+                // Request permission if it's the first or second denial
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, NOTIFICATION_PERMISSION_CODE);
+            } else {
+                // If permission denied twice, skip permission request and proceed
+                Toast.makeText(this, "Permission denied twice. Proceeding without notifications.", Toast.LENGTH_SHORT).show();
+                navigateToMainActivity();
+            }
+        } else {
+            // For devices below Android 13, proceed without requesting permission
+            navigateToMainActivity();
+        }
+    }
+
+    private void navigateToMainActivity() {
+        // Save flag to prevent repeated navigation
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        prefs.edit().putBoolean(PREF_NAVIGATED_TO_MAIN, true).apply();
+
+        // Navigate to MainActivity
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
+        // Finish the current activity to prevent it from being in the back stack
+        finish();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == NOTIFICATION_PERMISSION_CODE) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted, proceed to MainActivity
+                navigateToMainActivity();
+            } else {
+                // Permission denied
+                SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+                int denyCount = prefs.getInt(PREF_DENY_COUNT, 0);
+
+                // Increment deny count and save it
+                denyCount++;
+                prefs.edit().putInt(PREF_DENY_COUNT, denyCount).apply();
+
+                if (denyCount < 2) {
+                    // Retry requesting the permission if less than 2 denials
+                    Toast.makeText(this, "Notification permission is required. Please allow.", Toast.LENGTH_SHORT).show();
+                    requestNotificationPermission();
+                } else {
+                    // If denied twice, proceed without requesting permission
+                    Toast.makeText(this, "Permission denied twice. Proceeding without notifications.", Toast.LENGTH_SHORT).show();
+                    navigateToMainActivity();
+                }
+            }
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+}

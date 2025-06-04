@@ -1,0 +1,67 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#246447"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="178dp"
+					android:layout_height="178dp"
+					android:src="@drawable/app_icon2"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:padding="8dp"
+				android:orientation="horizontal">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="5dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="example Of Job sms mesgess to pay for Android studio 🎙️ and I need to pay for the offer "
+					android:textSize="16sp"
+					android:textStyle="bold"
+					android:textColor="#263238"
+					android:layout_gravity="center_horizontal|center_vertical" />
+			</LinearLayout>
+			<Button
+				android:id="@+id/button1"
+				android:layout_width="177dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:padding="8dp"
+				android:background="#673AB7"
+				android:text="Uninstall"
+				android:textSize="18sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">Cash Luto</string>
+    <!-- Image Descriptions for Accessibility -->
+    <string name="image_desc">Offer Icon</string>
+    <string name="coin_image">Coin Icon</string>
+
+    <!-- Offer Text -->
+    <string name="offer_text">Offerwall</string>
+    <string name="offer_desc">Earn from doing simple offers</string>
+
+    <!-- Coin Value -->
+    <string name="coin_value">50K</string>
+
+</resources>
